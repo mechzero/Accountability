@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Accountability</title>
+    <link rel="stylesheet" href="style/landingpage.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>Hello, welcome to Accountability</h1>
+    <p>Click "Login" to login or click "Create Account" to start.</p>
+    <div class="button-container">
+        <button id="loginButton" onclick="redirectToLogin()">Login</button>
+        <button id="createAccountButton" onclick="redirectToSignUp()">Create Account</button>
+    </div>
+
+    <script>
+        function redirectToLogin() {
+            // You can add the logic here to redirect to the login page.
+             window.location.href = 'loginPage.html';
+        
+        }
+
+        function redirectToSignUp() {
+            // You can add the logic here to redirect to the sign-up page.
+            window.location.href = 'signup.html';
+         
+        }
+    </script>
+</body>
+</html>
