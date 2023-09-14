@@ -7,15 +7,44 @@
     <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
+    <div class="login__header">
+
+        <div class="logo"> <h1> Accountability</h1></div>
+
+    </div>
     <div class="container">
-        <h2>Login</h2>
+        <h2 class="signin"> Log In</h2>
+        
         <form action="login_process.php" method="POST"> <!-- Replace "login_process.php" with your actual login processing script -->
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
+            
+            <label class="input__label" for="email">Email:</label>
+            <input class="credentials__inputfield" type="email" id="email" name="email" required>
+           
+            <label class="input__label" for="password">Password:</label>
+            <input class="credentials__inputfield" type="password" id="password" name="password" required>
+            <div><br></div>
+            <button type="submit">LOG IN</button>
         </form>
+
+        <br>
+        <div class="box">
+            
+        <input class="checkbox" type="checkbox" id="remember" name="remember">
+        <label class="checkbox__text" for="remember">Remember Me</label>
+
+        <div id="help"> <a href="">Forgot Password</a></div>
+     
+
+        </div>
+        <div><br></div>
+        <div><br></div>
+
+        <p> New to Accountability? <a href="">Sign up now</a> </p>
+        <div><br></div>
+        <div><br></div>
+        <div><br></div>
+        <div><br></div>
+        <p class="quote"> Sharing Progress, Fueling Success</p>
     </div>
 </body>
 </html>
